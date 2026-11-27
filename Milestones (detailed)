@@ -18,3 +18,10 @@ Milestone 2: Create the Sample Registration Form
 - submit button working
 - success confirmation displayed
 - edited success confirmation spacing within that div 
+
+Milestone 3: Sample Data Storage
+- created file-based sample storage using Python file handling
+- captured all user entered registration fields from submitted forms
+- saved sample information to data/samples.text (REFER TO SOON IN STEP 4)
+- appended new records without overwriting existing records
+- tested sample submissions and verified successful data storage
