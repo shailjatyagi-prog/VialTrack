@@ -339,4 +339,18 @@ footer {
     .back-link {
         text-align: center;
     }
+
+    /* Success message */
+    .success-message {
+    margin-bottom: 28px;
+    padding: 20px 24px;
+    }
+
+    .success-message h2 {
+        margin-bottom: 6px;
+    }
+
+    .success-message p {
+        margin: 0;
+    }
 }

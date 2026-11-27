@@ -23,9 +23,19 @@
             <h1>Register a new sample</h1>
             <p class="subtitle">Add sample details and assign a storage location.</p>
         </div>
+        {% if submitted %}
+        <div class="success-message" style="margin-bottom: 35px;">
+            <h2>Sample submitted successfully!</h2>
+            <p>VialTrack received your sample information.</p>
+        </div>
+        {% else %}
+        <div class="success-message">
+            <p>Ready to register a sample.</p>
+        </div>
+        {% endif %}
 
         <section class="form-card">
-            <form>
+            <form method="POST" action="{{ url_for('register') }}">
                 <div class="form-section">
                     <div class="section-heading">
                         <span class="section-number">01</span>
@@ -95,7 +105,7 @@
 
                 <div class="form-actions">
                     <a href="{{ url_for('home') }}" class="back-link">Back to homepage</a>
-                    <button type="button" class="primary-button">Register sample</button>
+                    <button type="submit" class="primary-button">Register sample</button>
                 </div>
             </form>
         </section>

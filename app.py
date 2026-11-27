@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -8,9 +9,22 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/register")
+@app.route("/register", methods=["GET", "POST"])
 def register():
-    return render_template("register.html")
+    if request.method == "POST":
+        sample = {
+            "sample_type": request.form.get("sample_type"),
+            "description": request.form.get("description"),
+            "incubator": request.form.get("incubator"),
+            "shelf": request.form.get("shelf"),
+            "rack": request.form.get("rack"),
+            "box": request.form.get("box"),
+            "position": request.form.get("position")
+        }
+
+        return render_template("register.html", submitted=True, sample=sample)
+
+    return render_template("register.html", submitted=False)
 
 
 if __name__ == "__main__":
