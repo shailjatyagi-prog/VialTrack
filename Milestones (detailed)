@@ -1,0 +1,9 @@
+Milestone 1: Project Setup and Development Environment
+
+- Created and organized the VialTrack project structure
+- Set up the GitHub repository
+- Configured Python virtual environment
+- Installed Flask and dependencies
+- Created initial Flask application (app.py)
+- Built initial HTML homepage and CSS styling
+- Successfully tested local application launch
