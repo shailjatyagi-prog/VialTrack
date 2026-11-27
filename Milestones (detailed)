@@ -7,3 +7,7 @@ Milestone 1: Project Setup and Development Environment
 - Created initial Flask application (app.py)
 - Built initial HTML homepage and CSS styling
 - Successfully tested local application launch
+
+
+Milestone 2: Create the Sample Registration Form.
+- user enter's lab sample info 
