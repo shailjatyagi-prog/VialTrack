@@ -1,7 +1,9 @@
-
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
+
+DATA_FILE = os.path.join("data", "samples.text")
 
 
 @app.route("/")
@@ -21,6 +23,18 @@ def register():
             "box": request.form.get("box"),
             "position": request.form.get("position")
         }
+
+        with open(DATA_FILE, "a") as file:
+            file.write(
+                f"\nSample Type: {sample['sample_type']}\n"
+                f"Description: {sample['description']}\n"
+                f"Incubator: {sample['incubator']}\n"
+                f"Shelf: {sample['shelf']}\n"
+                f"Rack: {sample['rack']}\n"
+                f"Box: {sample['box']}\n"
+                f"Position: {sample['position']}\n"
+                "------------------------------\n"
+            )
 
         return render_template("register.html", submitted=True, sample=sample)
 

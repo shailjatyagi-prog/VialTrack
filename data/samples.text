@@ -1,1 +1,28 @@
 # VialTrack sample records
+
+Sample Type: a
+Description: a
+Incubator: e
+Shelf: q
+Rack: e
+Box: e
+Position: e
+------------------------------
+
+Sample Type: b
+Description: b
+Incubator: g
+Shelf: d
+Rack: g
+Box: f
+Position: f
+------------------------------
+
+Sample Type: d
+Description: d
+Incubator: d
+Shelf: d
+Rack: d
+Box: d
+Position: d
+------------------------------
