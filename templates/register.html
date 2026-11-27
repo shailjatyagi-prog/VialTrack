@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Sample | VialTrack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header class="site-header">
+        <a href="{{ url_for('home') }}" class="brand">VialTrack<span>.</span></a>
+        <span class="header-label">LABORATORY MANAGEMENT</span>
+    </header>
+
+    <main class="page-content">
+        <div class="page-heading">
+            <p class="eyebrow">SAMPLE MANAGEMENT</p>
+            <h1>Register a new sample</h1>
+            <p class="subtitle">Add sample details and assign a storage location.</p>
+        </div>
+
+        <section class="form-card">
+            <form>
+                <div class="form-section">
+                    <div class="section-heading">
+                        <span class="section-number">01</span>
+                        <div>
+                            <h2>Sample details</h2>
+                            <p>Tell us about the sample you're adding.</p>
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="sample_type">Sample type</label>
+                        <input type="text" id="sample_type" name="sample_type"
+                               placeholder="e.g. Blood, tissue, cell culture" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="description">Sample description</label>
+                        <textarea id="description" name="description"
+                                  placeholder="Enter any relevant sample details..."
+                                  rows="4" required></textarea>
+                    </div>
+                </div>
+
+                <div class="form-divider"></div>
+
+                <div class="form-section">
+                    <div class="section-heading">
+                        <span class="section-number">02</span>
+                        <div>
+                            <h2>Storage location</h2>
+                            <p>Specify exactly where this sample is stored.</p>
+                        </div>
+                    </div>
+
+                    <div class="location-grid">
+                        <div class="field">
+                            <label for="incubator">Incubator</label>
+                            <input type="text" id="incubator" name="incubator"
+                                   placeholder="e.g. Incubator 1" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="shelf">Shelf</label>
+                            <input type="text" id="shelf" name="shelf"
+                                   placeholder="e.g. Shelf A" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="rack">Rack</label>
+                            <input type="text" id="rack" name="rack"
+                                   placeholder="e.g. Rack 2" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="box">Box</label>
+                            <input type="text" id="box" name="box"
+                                   placeholder="e.g. Box 4" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="position">Position</label>
+                            <input type="text" id="position" name="position"
+                                   placeholder="e.g. Position 8" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <a href="{{ url_for('home') }}" class="back-link">Back to homepage</a>
+                    <button type="button" class="primary-button">Register sample</button>
+                </div>
+            </form>
+        </section>
+
+        <p class="page-note">VialTrack <span>·</span> CS19300 Project</p>
+    </main>
+
+</body>
+</html>
