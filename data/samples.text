@@ -26,3 +26,37 @@ Rack: d
 Box: d
 Position: d
 ------------------------------
+
+Sample ID: 85E63366
+Sample Type: c
+Description: c
+Storage Location: a / a / a / a / a
+------------------------------
+
+Sample ID: A8E5A90F
+Sample Type: Same loco tester
+Description: Same loco
+Storage Location: 1 / A / 2 / 4 / 8
+------------------------------
+
+Sample ID: 641BDD30
+Sample Type: dup loco changed
+Description: Incubator: e
+
+
+
+Shelf: q
+
+
+
+Rack: e
+
+
+
+Box: e
+
+
+
+Position: e
+Storage Location: e / q / e / e / 8
+------------------------------
