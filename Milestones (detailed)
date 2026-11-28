@@ -26,3 +26,17 @@ Milestone 3: Sample Data Storage
 - appended new records without overwriting existing records
 - tested sample submissions and verified successful data storage
 - will remove and select data soon.
+
+CLARIFY:
+Milestone 3 saves submitted information, milestone 4 gives each sample a unique ID and organizes 
+its physical storage coord into one location to refer to.
+
+Milestone 4: STorage Location System
+- generate unique IDs for samples
+- assign storage locations
+- check if position occupied, prevent two samples assigned same location
+
+Milestone 5: Sample Search & Retreival 
+- add new section for searching sample ID
+- retrieve sample info
+- display exact location to user
