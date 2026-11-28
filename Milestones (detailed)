@@ -31,6 +31,8 @@ CLARIFY:
 Milestone 3 saves submitted information, milestone 4 gives each sample a unique ID and organizes 
 its physical storage coord into one location to refer to.
 
+FRAMEWORK: Save samples → Manage where samples are stored → Find samples when needed.
+
 Milestone 4: STorage Location System
 - generate unique IDs for samples
 - assign storage locations
