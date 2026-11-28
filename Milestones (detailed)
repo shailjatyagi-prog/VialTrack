@@ -33,7 +33,7 @@ its physical storage coord into one location to refer to.
 
 FRAMEWORK: Save samples → Manage where samples are stored → Find samples when needed.
 
-Milestone 4: STorage Location System
+Milestone 4: Storage Location System
 - generated unique IDs for samples
 - assigned storage locations
 - checked if position occupied, prevent two samples assigned same location
@@ -43,4 +43,10 @@ Milestone 4: STorage Location System
 Milestone 5: Sample Search & Retreival 
 - add new section for searching sample ID
 - retrieve sample info
-- display exact location to user
+- display exact location of sample to user
+- developed a helper function to retrieve sample records from the data file
+- enabled case-insensitive sample ID searches
+- displayed retrieved sample information, including ID, type, description, and storage location
+- implemented error handling for sample IDs that do not exist
+- tested successful sample retrieval and invalid sample ID searches
+
