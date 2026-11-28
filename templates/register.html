@@ -23,6 +23,11 @@
             <h1>Register a new sample</h1>
             <p class="subtitle">Add sample details and assign a storage location.</p>
         </div>
+        {% if error %}
+        <div class="success-message" style="margin-bottom: 35px;">
+            <p>{{ error }}</p>
+        </div>
+        {% endif %}
         {% if submitted %}
         <div class="success-message" style="margin-bottom: 35px;">
             <h2>Sample submitted successfully!</h2>
